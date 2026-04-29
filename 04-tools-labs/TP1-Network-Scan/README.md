@@ -12,3 +12,7 @@ Discover active hosts, open ports, and services in a network.
 ip a
 nmap -sn 192.168.x.0/24
 nmap -sV -A IP
+
+## 📌 Conclusion
+
+This lab demonstrates the reconnaissance phase of cybersecurity.
