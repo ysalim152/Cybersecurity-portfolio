@@ -1,6 +1,3 @@
-
----
-
 ## 📄 TP2 — SOC Analysis (Wireshark)
 
 ```markdown
@@ -31,4 +28,8 @@ Traffic analysis shows a reconnaissance attempt using Nmap.
 ## 📌 Conclusion
 Wireshark can detect early-stage attacks like port scanning.
 
----
+## 📸 Evidence
+
+![Trafic Scan](images/01-traffic-overview.png)
+![SYN Scan](images/02-syn-scan-detection.png)
+![SYN Packet Detail](images/03-syn-packet-detail.png)

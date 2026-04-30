@@ -36,3 +36,11 @@ HIGH
 ### 📌 Conclusion
 This incident represents a typical multi-stage attack:
 Reconnaissance → Service discovery → Targeted exploitation attempt
+
+### 📸 Evidence
+
+![SYN Scan](images/01-syn-scan-detection.png)
+![HTTP Traffic](images/02-http-traffic.png)
+![Phpmyadmin Request](images/03-phpmyadmin-request.png)
+![HTTP Request](images/04-http-request-detail.png)
+![HTTP Response](images/05-http-response.png)
