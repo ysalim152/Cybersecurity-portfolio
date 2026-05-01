@@ -1,0 +1,34 @@
+## 🚨 Incident - SSH Brute Force Attack
+
+### 📍 Source
+192.168.1.80
+
+### 🎯 Target
+192.168.1.75
+
+### 🔍 Activity
+- Multiple SSH login attempts
+- Repeated failed authentications
+
+### 🧪 Evidence
+- Wireshark: repeated TCP connections on port 22
+- Logs: "Failed password" entries
+
+### 🧠 Analysis
+Attack pattern consistent with brute force attempt.
+
+### 🚨 Risk
+HIGH
+
+### ⚠️ Impact
+- Possible account compromise
+- Unauthorized access
+
+### ✅ Recommendations
+- Disable password authentication
+- Use SSH keys
+- Implement fail2ban
+- Limit login attempts
+
+### 📌 Conclusion
+Detected brute force attack targeting SSH service.
