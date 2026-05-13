@@ -12,16 +12,6 @@ and malicious domains before they ever reach the end-user devices.
 2.  **Un processus de décision (le losange)** : Montrant exactement l'étape d'inspection (Choke point) où Pi-hole décide si le domaine est sain ou malveillant/publicitaire.
 3.  **La sortie vers Internet** : Via votre routeur Ooredoo vers le fournisseur DNS final.
 
-### 🛠️ Deployment Log
-
-The deployment was performed on a Raspberry Pi running Raspberry Pi OS (Lite), accessed remotely via SSH.
-
-**1. System Preparation**
-Ensuring the operating system and package repositories were fully updated before installation to prevent dependency conflicts:
-```bash
-sudo apt update
-sudo apt full-upgrade -y
-sudo reboot
 
 ```mermaid
 graph LR
@@ -34,3 +24,14 @@ graph LR
     C -- No --> E[🌐 Ooredoo Router<br>Gateway]
     E -->|3. Forward Query| F((☁️ Upstream DNS<br>e.g. Cloudflare))
     F -.->|4. Resolves IP| A
+
+### 🛠️ Deployment Log
+
+The deployment was performed on a Raspberry Pi running Raspberry Pi OS (Lite), accessed remotely via SSH.
+
+**1. System Preparation**
+Ensuring the operating system and package repositories were fully updated before installation to prevent dependency conflicts:
+```bash
+sudo apt update
+sudo apt full-upgrade -y
+sudo reboot
