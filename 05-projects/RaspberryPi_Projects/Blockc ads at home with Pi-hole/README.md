@@ -1,10 +1,26 @@
-### 🏗️ Network Architecture & DNS Flow
 
-By centralizing DNS resolution through the Pi-hole, the network establishes a single inspection point. 
-This allows for efficient, 
-network-wide filtering of trackers, 
-ads, 
-and malicious domains before they ever reach the end-user devices.
+# Network-Wide Ad Blocking & Security Sinkhole
+
+## Project Overview
+
+This project involves the deployment of a **Pi-hole** server on a Raspberry Pi
+to act as a private DNS sinkhole for a home network.
+
+By centralizing DNS resolution, this implementation provides network-wide
+protection against advertisements, trackers, and malicious domains,
+enhancing both privacy and security for all connected devices
+(PCs, smartphones, IoT, Smart TVs).
+
+---
+
+## 🏗️ Network Architecture & DNS Flow
+
+By centralizing DNS resolution through the Pi-hole,
+the network establishes a single inspection point.
+
+This allows for efficient, network-wide filtering
+of trackers, ads, and malicious domains before
+they ever reach the end-user devices.
 
 ### Ce que ce code va générer visuellement :
 
@@ -24,14 +40,3 @@ graph LR
     C -- No --> E[🌐 Ooredoo Router<br>Gateway]
     E -->|3. Forward Query| F((☁️ Upstream DNS<br>e.g. Cloudflare))
     F -.->|4. Resolves IP| A
-
-### 🛠️ Deployment Log
-
-The deployment was performed on a Raspberry Pi running Raspberry Pi OS (Lite), accessed remotely via SSH.
-
-**1. System Preparation**
-Ensuring the operating system and package repositories were fully updated before installation to prevent dependency conflicts:
-```bash
-sudo apt update
-sudo apt full-upgrade -y
-sudo reboot
