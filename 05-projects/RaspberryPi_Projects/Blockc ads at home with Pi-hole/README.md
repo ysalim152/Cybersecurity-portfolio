@@ -22,11 +22,11 @@ This allows for efficient, network-wide filtering
 of trackers, ads, and malicious domains before
 they ever reach the end-user devices.
 
-### Ce que ce code va générer visuellement :
+### What this code will visually generate:
 
-1.  **Une boîte "Local Home Network"** qui regroupe vos appareils et votre Raspberry Pi.
-2.  **Un processus de décision (le losange)** : Montrant exactement l'étape d'inspection (Choke point) où Pi-hole décide si le domaine est sain ou malveillant/publicitaire.
-3.  **La sortie vers Internet** : Via votre routeur Ooredoo vers le fournisseur DNS final.
+A "Local Home Network" box grouping your devices and your Raspberry Pi.
+A decision process (the diamond shape): showing the exact inspection step (choke point) where Pi-hole determines whether a domain is safe or malicious/advertising-related.
+The Internet outbound connection: through your Ooredoo router to the final DNS provider.
 
 
 ```mermaid
