@@ -12,7 +12,8 @@ graph LR
     C -- Yes --> D[🛑 Sinkholed<br>Returns 0.0.0.0]
     C -- No --> E[🌐 Ooredoo Router<br>Gateway]
     E -->|3. Forward Query| F((☁️ Upstream DNS<br>e.g. Cloudflare))
-    F -.->|4. Resolves IP| A```
+    F -.->|4. Resolves IP| A 
+EOF
 
 
 ### Ce que ce code va générer visuellement :
