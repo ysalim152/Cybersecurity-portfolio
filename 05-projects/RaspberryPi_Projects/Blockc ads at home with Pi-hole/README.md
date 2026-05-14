@@ -84,8 +84,6 @@ This command allows immediate threat detection:
 ```bash
 pihole -t
 ```
-
-
 ### What this code will visually generate:
 
 - A **"Local Home Network"** box grouping your devices and your Raspberry Pi.
